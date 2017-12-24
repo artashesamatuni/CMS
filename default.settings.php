@@ -2,16 +2,16 @@
 
 //1 #### Mysql database settings
     $server   = "localhost";
-    $database = "emoncms";
-    $username = "_DB_USER_";
-    $password = "_DB_PASSWORD_";
+    $database = "cms";
+    $username = "cms";
+    $password = "term1nal";
     $port     = "3306";
     // Skip database setup test - set to false once database has been setup.
     $dbtest = true;
 
 
 //2 #### Redis
-    $redis_enabled = false;
+    $redis_enabled = true;
     $redis_server = array( 'host'   => 'localhost',
                            'port'   => 6379,
                            'auth'   => '',
@@ -21,7 +21,7 @@
 //3 #### MQTT
     // The 'subscriber' topic format is rx/* - where * is the emoncms input node number.
     // The 'publisher' topic format is user selectable from the 'Publish to MQTT' input process, for example power/solar
-    $mqtt_enabled = false;          // Activate MQTT by changing to true
+    $mqtt_enabled = true;          // Activate MQTT by changing to true
     $mqtt_server = array( 'host'     => 'localhost',
                           'port'     => 1883,
                           'user'     => '',
